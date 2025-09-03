@@ -1,0 +1,14 @@
+print("hello world")
+
+
+
+class Main{
+public static void main(string[]args){
+system.out.println("hello world");
+}}
+	
+	
+	
+function wish(){
+	console.log("hello world")
+wish()

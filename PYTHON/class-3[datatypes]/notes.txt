@@ -1,0 +1,68 @@
+datatypes in python
+<class int>
+<class float>
+<class str>
+<class complex>
+<class bool>
+
+<class list>
+<class tuple>
+<class set>
+<class dict>
+
+<class bytes>----group of values between 0-256
+<class bytearray>----group of values between 0-256
+<class frozenset>
+<class range>
+<class nonetype> 
+
+
+<class function>
+
+
+
+
+
+
+
+
+base1                        base2                            base3                               base16  a-f,A-F
+[0-9]                         [0,1]                           [0-7]                               [0-9]
+decimal                      binary                           octal                                hexadecimal
+a=15                         b=0b1111
+                             b=0B1111
+							 print(b)
+							pritn(type(b))
+print(a)
+pritn(type(a))
+
+
+
+=============================================================
+inbuilt function                        type calling function
+print										int
+input										bin
+type										hex
+id											oct
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

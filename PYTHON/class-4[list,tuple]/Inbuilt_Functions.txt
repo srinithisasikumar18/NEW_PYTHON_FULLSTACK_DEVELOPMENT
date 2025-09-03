@@ -1,0 +1,51 @@
+60 INBUILT FUNCTIONS IN PYTHON
+---Type Conversion and Creation--[14]
+bool(): Converts a value to a boolean.
+bytes(): Returns a new bytes object.
+bytearray(): Returns a new array of bytes.
+complex(): Creates a complex number.
+dict(): Creates a dictionary.
+float(): Converts a value to a floating-point number.
+frozenset(): Returns a new frozenset object.
+int(): Converts a value to an integer.
+list(): Creates a list.
+set(): Creates a set.
+str(): Converts a value to a string.
+tuple(): Creates a tuple.
+ascii(): cretaes a ascii value.
+
+--Mathematical and Numerical--[6]
+divmod(): Returns a tuple of quotient and remainder.
+max(): Returns the largest item in an iterable or the largest of two or more arguments.
+min(): Returns the smallest item in an iterable or the smallest of two or more arguments.
+pow(): Returns x to the power of y.
+round(): Rounds a number to a given precision.
+sum(): Sums the items of an iterable.
+
+--Iterators and Iterables--[8]
+len(): Returns the length (the number of items) of an object.
+range(): Returns a sequence of numbers.
+reversed(): Returns a reversed iterator.
+sorted(): Returns a new sorted list from the items in an iterable.
+enumerate(): Returns an enumerate object.
+filter(): Constructs an iterator from elements of an iterable for which a function returns true.
+ll(): Returns True if all elements of an iterable are true.
+any(): Returns True if any element of an iterable is true.
+
+--Object and Attribute Handling--[1]
+dir(): Returns a list of names in the current scope or attributes of an object.
+
+
+
+
+--Inbuit FUNCTIONS--[10]
+print():prints the output to the console
+type():returns the type of the object
+id():returns the location of the object
+input():returns the user input
+oct():returns the octal value the given elements
+hex():():returns the hexaoctal value the given elements
+bun():returns the binary value the given elements
+isinstance(): Returns True if the object is an instance of the class or a subclass thereof.
+issubclass(): Returns True if class is a subclass of classinfo.
+hash(): Returns the hash value of an object.

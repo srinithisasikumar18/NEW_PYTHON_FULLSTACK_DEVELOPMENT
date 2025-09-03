@@ -1,0 +1,10 @@
+nameerror
+indentationerror
+syntaxerror
+
+valueerror
+typeerror
+attributeerror
+inputerror
+
+filenotfounderror
