@@ -1,0 +1,20 @@
+what is function
+outside the class 
+
+def deposit(Amount):
+	print("amount deposited")
+	
+	
+what is method
+inside the class
+class Account:
+	def deposit(Amount):
+	print("amount deposited")
+	
+	
+	
+function: group of statements for specific purpose
+* creating a function one and invoking "n" no of times
+* used for code reusability
+
+	
