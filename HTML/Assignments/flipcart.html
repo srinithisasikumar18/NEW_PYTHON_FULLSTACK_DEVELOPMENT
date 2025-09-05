@@ -34,9 +34,42 @@
       <textarea
         id="text"
         placeholder="Address(Area and Street)"
+        rows="6"
+        cols="45"
+      ></textarea
+      ><br /><br />
+      <label></label>
+      <input
+        type="text"
+        placeholder="City/District/Town"
+        size="20"
+        style="height: 30px"
+      />
+      <label>State</label>
+      <select name="State">
+        <option value="" disabled selected>--select state</option>
+        <option value="And">Andhra Pradesh</option>
+        <option value="Tam">Tamil Nadu</option>
+        <option value="Kel">Kerala</option>
+        <option value="Kar">Karnataka</option></select
+      ><br /><br />
+
+      <input type="text" placeholder="Landmark(optional)" />
+      <label></label>
+      <input
+        type="number"
+        placeholder="Alternate Phone(optional)"
+      /><br /><br />
+      <label>Address type</label><br />
+      <input type="radio" />Home <input type="radio" />Work<br /><br />
+      <input
+        type="submit"
+        value="SAVE"
+        size="300"
         style="height: 50px"
-        style="width: 100px"
-      ></textarea>
+        style="width: 150px"
+      />
+      <input type="submit" value="CANCEL" size="30" style="height: 50px" />
     </form>
   </body>
 </html>
