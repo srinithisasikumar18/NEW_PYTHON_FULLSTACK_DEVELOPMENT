@@ -1,0 +1,5 @@
+fp=open('abc.txt','r')
+data=fp.read()
+fp=open('data.txt','w')
+fp.write(data)
+print("new file is created")
