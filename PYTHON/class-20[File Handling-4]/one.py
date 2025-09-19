@@ -29,10 +29,5 @@ csv_writer=csv.writer(fp2)
 csv_writer.writerow(['uid','username','city','phoneno'])
 csv_writer.writerows(new_users_csv)
 print("New CSV File Created")
-
-
-
-
-
 fp1.close()
 fp2.close()

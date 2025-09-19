@@ -1,0 +1,17 @@
+json module has two modes:
+1.loads()
+2.dumps()
+with files:
+1.load()
+2.dump()
+
+
+
+WITHOUT FILES:
+python data--->json string data use "dumps()"
+json string data--->python data use "loads()"
+
+
+
+load                        dump
+users.json--python         python--employees.json

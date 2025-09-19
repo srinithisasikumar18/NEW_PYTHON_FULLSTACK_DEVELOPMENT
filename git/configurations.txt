@@ -1,0 +1,6 @@
+git init
+
+
+
+git config --global user.name "Srinithi Sasikumar"
+git config --global user.email "sasikumarsrinithi09@gmail.com"

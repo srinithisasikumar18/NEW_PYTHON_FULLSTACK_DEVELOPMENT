@@ -1,0 +1,46 @@
+OPERATORS
+
+1. Arithmetic operator: +,-,*,/,//,%,**
+2.Relational OPERATORS:<,<=,>,>=,==,!=
+3.logical Operators: and ,or ,and
+4. Assignment Operators: =
+5. Special Operator:
+	a.Membership : in, notin
+	b.identity:is , is not    
+6,bitwise:
+
+
+ARTHIMETIC:
++--two types
+	1.addition--between integers or float values
+	2.concatination--between two strings
+ex:
+print("hello"+"world"
+ERROR:
+if we concate:
+ print("hello"+10)----leads to error
+ 
+*---two types
+	1.multiplication--between integers result==integers
+	                --between float result==float
+	2.repitetion--between strings and integers types
+	
+
+	
+/----always result is float
+ex:10/2=5.0
+//---always result is integer
+ex:10//2=5
+//---if one of the operand is float result is also float
+ex:10.0//2=5.0
+**---exponential
+ex:
+relational or logical: resulti is always TRUE/FALSE
+
+
+Membership: if you want verify element/value/number in a sequence or not
+*sequence can be list, tuple, dict, dict, string("srinithi"), byte,bytearray, frozenset,range
+*in and not in
+
+Identity: it it used fo reference 
+

@@ -1,0 +1,11 @@
+request module:
+	handle or invole rest api's
+	
+HTTPS methods:
+get------------request.get(    )
+
+post-----------request.post(    )
+
+put 
+delete
+patch
