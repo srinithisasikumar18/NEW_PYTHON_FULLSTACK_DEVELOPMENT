@@ -1,0 +1,10 @@
+how to access mongoDB:
+1.cmd:-mongosh
+
+how to show list of databases:-
+show databases
+
+how to drop a database:-
+
+
+creating a database:
