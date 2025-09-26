@@ -1,0 +1,95 @@
+Update operator:
+use dbthree
+
+db.createCollection("employees");
+db.employees.insertMany([
+{"eid":101,"ename":"John","esal":41500},
+{"eid":102,"ename":"modi","esal":31500},
+{"eid":103,"ename":"priya","esal":61500},
+{"eid":104,"ename":"riya","esal":51500}
+]);
+find():{}
+db.employees.findOne({"eid":103});
+{
+  _id: ObjectId('68d53279561294e5c4eec4ab'),
+  eid: 103,
+  ename: 'priya',
+  esal: 61500
+}
+findOne():[]
+ db.employees.find();
+[
+  {
+    _id: ObjectId('68d53279561294e5c4eec4a9'),
+    eid: 101,
+    ename: 'John',
+    esal: 41500
+  },
+  {
+    _id: ObjectId('68d53279561294e5c4eec4aa'),
+    eid: 102,
+    ename: 'modi',
+    esal: 31500
+  },
+  {
+    _id: ObjectId('68d53279561294e5c4eec4ab'),
+    eid: 103,
+    ename: 'priya',
+    esal: 61500
+  },
+  {
+    _id: ObjectId('68d53279561294e5c4eec4ac'),
+    eid: 104,
+    ename: 'riya',
+    esal: 51500
+  }
+]
+*if id is not present:-
+db.employees.findOne({"eid":107});
+null
+
+update:
+syntax:
+db.collection.updateOne(
+  <filter>, // Query object to select the document(s) to update
+  <update>, // Object specifying the modifications to be made
+  <options> // Optional: e.g., { upsert: true } to insert if no match is found
+);
+ex:
+db.employees.updateOne(
+{"eid":103},
+{ $set: { esal:56000} }
+);
+
+
+sql:-
+update employees
+set ename="rg"
+where
+eid=101;
+
+UPDATEMANY():
+mysql:
+update employees
+set loc="ben";
+
+mongodb:
+db.employees.updateMany({},{$set:{loc:"ben"}});
+
+
+deleteONe():
+delete all employees where loc="ben"
+db.employees.deleteOne({"loc":"ben"});
+db.employees.deleteMany({"loc":"ben"});
+
+
+
+db.employees.remove();
+DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.remove)
+dbthree>
+
+
+db.users.findOneAndDelete(
+   { name: "Modi", esal: 31500 }
+)
