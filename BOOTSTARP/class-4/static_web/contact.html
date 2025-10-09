@@ -1,3 +1,5 @@
+
+
 <html>
   <head>
     <title>Static web page</title>
@@ -7,7 +9,7 @@
     <a href="./index.html" class="navbar-brand">Logo</a>
     <div class="ml-auto">
       <ul class="navbar-nav">
-        <li><a href="./index.html" class="nav-link"></a></li>
+        <li><a href="./index.html" class="nav-link">Home</a></li>
         <li><a href="./about.html" class="nav-link">About</a></li>
         <li><a href="./service.html" class="nav-link">Services</a></li>
         <li><a href="./employees.html" class="nav-link">Employees</a></li>
@@ -21,67 +23,85 @@
     
   
   <hr />
-  <div class="container">        <!--1-->
+  <div class="container">        
     <h4>Contact Us</h4>
-    <div class="row mt-4">        <!--2-->
-      <div class="col-6">         <!--3-->
-        <div class="card">         <!--4-->
-          <div class="card-header"> <!--5--><!--closed-->
+    <div class="row mt-4">        
+      <div class="col-6">         
+        <div class="card">         
+          <div class="card-header"> 
             <h3>Send us an Email</h3>
-          </div>                     <!--5-->
-          <div class="card-body">     <!--6-->
+          </div>                     
+          <div class="card-body">     
             <form >
-              <div class="row">       <!--7-->
+              <div class="row">       
                 <!--name-->
-                <div class="col-4">     <!--8--><!--closed-->
+                <div class="col-4">     
               <label class="form-label">Name*</label>
               <input type="text" class="form-control" >
-              </div>                    <!--8-->
+              </div>                   
               <!--email-->
-              <div class="col-4">         <!--9-->
+              <div class="col-4">         
               <label class="form-label">Email*</label>
               <input type="email" class="form-control">
-              </div>                        <!--9closed-->
+              </div>                      
               <!--phone-->
-              <div class="col-4">            <!--10-->
+              <div class="col-4">           
                 <label class="form-label">Phone*</label>
                 <input type="number" class="form-control">
-              </div>                          <!--10closed-->
+              </div>                          
             <!-- subject -->
-              <div class="col-8">
+             <!-- <div class="row mt-3"> -->
+              <div class="col-8 offset-0">         
                 <label class="form-label">Subject*</label>
                 <input type="text" class="form-control">
-              </div>
+              </div>                       
               <!-- services -->
-              <div class="col-4">
+              <div class="col-4">            
                 <label class="form-label">Services*</label>
-                <input type="text" class="form-control">
-              </div>
+                <select class="form-control">
+                  <option disabled selected>--Select One--</option>
+                  <option value="WMD">Web Mobile Development</option>
+                  <option value="AS">Application Service</option>
+                  <option value="HDR">Hire Dedicated Resources</option>
+                  <option value="EWS">Enterprice Web Solution</option>
+                  <option value="IT">IT Consultancy</option>
+                  <option value="Ser">UI/UX Services</option>
+                  <option value="Oth">Others</option>
+                </select>
+              </div>     
+              </div>                     
               <!-- message -->
-              <div class="col-12">
-                <label for="message" class="form-label" >Message</label>
-                <input type="text" class="form-control" height="650px" width="200px">
-              </div>
-              <!-- sumbit -->
-              <div class="form-label">
-                <button type="submit" class="btn btn-warning" >SUBMIT</button>
-              </div>
-              </div>
-              </div>
-            </form>
-              </div>
+             
+  <!-- Message -->
+  <div class="form-group row">
+    <div class="col-12">
+      <label for="message" class="col-form-label">Message*</label>
+      <textarea class="form-control mb-3" id="message" rows="6" placeholder="Enter your message"></textarea>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="form-group row">
+    <div class="col-12">
+      <button type="submit" class="btn btn-warning btn-block">SUBMIT COMMENT</button>
+    </div>
+  </div>
+
+
+                </form>
+                                     
+            </div>
             </div>
           </div>
         
         <div class="col-6">
           <div class="card">
             <div class="card-header">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17045.16415722885!2d77.699503881956!3d12.960078908874147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10d5b2786a23%3A0xb08461de6796aef8!2sGreet%20Labs%20Private%20Limited!5e1!3m2!1sen!2sin!4v1759901331136!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></=>" frameborder="0"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17045.16415722885!2d77.699503881956!3d12.960078908874147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10d5b2786a23%3A0xb08461de6796aef8!2sGreet%20Labs%20Private%20Limited!5e1!3m2!1sen!2sin!4v1759901331136!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></=>" frameborder="0"></iframe>
         </div>
         </div>
         </div>
-      
-   
+  
   </div>
-  </body>
+  </body>
 </html>
