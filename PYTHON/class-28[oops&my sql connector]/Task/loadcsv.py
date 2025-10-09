@@ -2,7 +2,6 @@ import requests
 import mysql.connector,json,csv
 url=("https://dummyjson.com/users")
 respone=requests.get(url)
-
 sql_user=[]
 # employess=[]
 data=respone.json()
@@ -29,18 +28,12 @@ values (%s,%s,%s,%s);
 '''
 cursor.execute(sql_st)
 cursor.executemany(sql_insert,sql_user)
-# cursor.execute("select * from sql_users")
-# rows=cursor.fetchall()
-# print(rows)
-# cursor.execute("delete from sql_users")
-# print("deleted successfully")
 dbcon.commit()
 cursor.close()
 dbcon.close()
+print("table with data is created")
 fp=open('users.csv','w',newline='')
 cw=csv.writer(fp)
 cw.writerow(["user_id","user_name","user_emnail","user_gender"])
 cw.writerows(sql_user)
 print("data inserted into csv file")
-# user=json.load(sql_user)
-# print(user)

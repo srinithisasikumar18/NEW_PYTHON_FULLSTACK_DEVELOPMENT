@@ -2,9 +2,8 @@ import requests
 import mysql.connector,json,csv
 url=("https://dummyjson.com/users")
 respone=requests.get(url)
-
 sql_user=[]
-# employess=[]
+employess=[]
 data=respone.json()
 users=data['users']
 for user in users:
@@ -12,7 +11,7 @@ for user in users:
                      user['lastName'],
                      user['email'],
                      user['gender']))
-    # employess.append({user})
+    employess.append({'emp_id':user['id'],'emp_name':user['lastName'],'emp_email':user['email'],'emp_gender':user['gender']})
 dbcon=mysql.connector.connect(host='localhost',user='root',password='#Srinithi4877',database='onedb')
 cursor=dbcon.cursor()
 sql_st='''
@@ -29,18 +28,9 @@ values (%s,%s,%s,%s);
 '''
 cursor.execute(sql_st)
 cursor.executemany(sql_insert,sql_user)
-# cursor.execute("select * from sql_users")
-# rows=cursor.fetchall()
-# print(rows)
-# cursor.execute("delete from sql_users")
-# print("deleted successfully")
 dbcon.commit()
 cursor.close()
 dbcon.close()
-fp=open('users.csv','w',newline='')
-cw=csv.writer(fp)
-cw.writerow(["user_id","user_name","user_emnail","user_gender"])
-cw.writerows(sql_user)
-print("data inserted into csv file")
-# user=json.load(sql_user)
-# print(user)
+fp=open('emp.json','w')
+json.dump(employess,fp)
+print("json file is created")

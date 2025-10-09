@@ -10,8 +10,10 @@
   <style>
   /* Make the image fully responsive */
   .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
   }
   </style>
 </head>
@@ -36,13 +38,13 @@
               <div class="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item">
-                    <img src="./Images/slider1.jpg" alt="Technology">
+                    <img src="./Images/slider1.jpg">
                   </div>
                   <div class="carousel-item active">
-                    <img src="./Images/slider2.jpg" alt="Technology">
+                    <img src="./Images/slider2.jpg">
                   </div>
-                  <div class="carousel-item active">
-                    <img src="./Images/slider3.jpg" alt="Technology">
+                  <div class="carousel-item">
+                    <img src="./Images/slider3.jpg">
                   </div>
                 </div>
               </div>
@@ -52,5 +54,5 @@
       <script>
         $('.carousel').carousel({ interval: 500})
       </script>
-  </body>
+  </body>
 </html>
