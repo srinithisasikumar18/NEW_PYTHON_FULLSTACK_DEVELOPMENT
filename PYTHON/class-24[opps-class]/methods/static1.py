@@ -7,6 +7,7 @@ class Test:
     def m2(cls):
         print(Test.a)
         print(cls.a)
+    
 a1=Test()
 a1.m1()
 print(Test.a)
