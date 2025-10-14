@@ -1,0 +1,12 @@
+let price=3897
+console.log(typeof price)
+let rating=4.8
+console.log(typeof rating)
+let avial="y"
+console.log(typeof avial)
+let prod_Name="MILDIN"
+console.log(typeof prod_Name)
+let colors=["red","blue","yellow"]
+console.log(typeof colors)
+let eid;
+console.log(typeof eid)

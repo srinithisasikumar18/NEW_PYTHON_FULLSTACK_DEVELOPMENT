@@ -14,4 +14,14 @@
 
 
 //Valids::
+/* let _emp={
+    "eid":101,
+    "ename":"Rahul"
+}
+console.log(_emp) */
 
+
+let $emp={
+    "eid":101
+}
+console.log($emp)
