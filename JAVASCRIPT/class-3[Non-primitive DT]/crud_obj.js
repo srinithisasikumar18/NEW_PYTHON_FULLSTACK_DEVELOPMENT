@@ -21,4 +21,6 @@ console.log(emp)
 emp.gender="Female";
 console.log(emp)
 
-// 
+// DELETE
+delete emp.eid
+console.log(emp)
