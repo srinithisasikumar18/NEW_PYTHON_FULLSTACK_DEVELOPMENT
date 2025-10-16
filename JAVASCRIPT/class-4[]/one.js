@@ -9,3 +9,10 @@ console.log(employee[0].ename)
 console.log(employee[1].ename)
 console.log(employee[2].ename)
 console.log(employee[3].ename)
+//using "FOR OF" we can available to print names,id
+for(emp of employee){
+    console.log(emp)
+    console.log(emp.eid)
+    console.log(emp.esal)
+    console.log("name of emp is:",emp.ename)
+}
