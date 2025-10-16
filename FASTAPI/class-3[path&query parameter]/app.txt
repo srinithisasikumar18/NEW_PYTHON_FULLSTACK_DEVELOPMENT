@@ -1,0 +1,14 @@
+usage:application root requets
+api url: http://127.0.0.1:8000/
+method type:get
+required flieds:None
+
+usage:displaying all users
+api url: http://127.0.0.1:8000/users
+method type:get
+required flieds:None
+
+usage:fetch all users
+api url: http://127.0.0.1:8000/users/uid
+method type:get
+required flieds:None
