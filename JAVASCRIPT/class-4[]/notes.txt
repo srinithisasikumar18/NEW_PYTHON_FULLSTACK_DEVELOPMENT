@@ -1,0 +1,9 @@
+JS:-
+lightweight pl
+loosely typed and dynamically typed pl
+
+
+
+JAVA:-
+strictly typed
+static typed pl

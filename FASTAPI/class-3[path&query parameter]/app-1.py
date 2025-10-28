@@ -13,8 +13,6 @@ Required Fields:None
 @app.get("/users")
 def get_users():
     return users
-
-
 class User(BaseModel):
     uid:int 
     uname:str 

@@ -1,0 +1,61 @@
+let employees=[{"eid":1,"ename":"Carolann","gender":"Female"},
+{"eid":2,"ename":"Dore","gender":"Female"},
+{"eid":3,"ename":"Kendricks","gender":"Male"},
+{"eid":4,"ename":"Anneliese","gender":"Female"},
+{"eid":5,"ename":"Adolphe","gender":"Male"},
+{"eid":6,"ename":"Luce","gender":"Female"},
+{"eid":7,"ename":"Correy","gender":"Male"},
+{"eid":8,"ename":"Whitney","gender":"Male"},
+{"eid":9,"ename":"Etan","gender":"Male"},
+{"eid":10,"ename":"Gregoire","gender":"Male"},
+{"eid":11,"ename":"Edik","gender":"Male"},
+{"eid":12,"ename":"Faustine","gender":"Female"},
+{"eid":13,"ename":"Marve","gender":"Male"},
+{"eid":14,"ename":"Phillis","gender":"Female"},
+{"eid":15,"ename":"Edithe","gender":"Female"},
+{"eid":16,"ename":"Nikaniki","gender":"Female"},
+{"eid":17,"ename":"Pall","gender":"Male"},
+{"eid":18,"ename":"Emelda","gender":"Female"},
+{"eid":19,"ename":"Rudolf","gender":"Male"},
+{"eid":20,"ename":"Gerrie","gender":"Male"},
+{"eid":21,"ename":"Desmund","gender":"Male"},
+{"eid":22,"ename":"Gordon","gender":"Male"},
+{"eid":23,"ename":"Berry","gender":"Female"},
+{"eid":24,"ename":"Julio","gender":"Non-binary"},
+{"eid":25,"ename":"Maggi","gender":"Female"},
+{"eid":26,"ename":"Shandie","gender":"Female"},
+{"eid":27,"ename":"Issi","gender":"Female"},
+{"eid":28,"ename":"Hubie","gender":"Male"},
+{"eid":29,"ename":"Idell","gender":"Female"},
+{"eid":30,"ename":"Alphonso","gender":"Male"},
+{"eid":31,"ename":"Stanislaw","gender":"Male"},
+{"eid":32,"ename":"Nestor","gender":"Male"},
+{"eid":33,"ename":"Ralina","gender":"Polygender"},
+{"eid":34,"ename":"Concettina","gender":"Female"},
+{"eid":35,"ename":"Sutherland","gender":"Male"},
+{"eid":36,"ename":"Dyanne","gender":"Female"},
+{"eid":37,"ename":"Adelheid","gender":"Female"},
+{"eid":38,"ename":"Jeanna","gender":"Female"},
+{"eid":39,"ename":"Emile","gender":"Male"},
+{"eid":40,"ename":"Misha","gender":"Female"},
+{"eid":41,"ename":"Milka","gender":"Female"},
+{"eid":42,"ename":"Pierson","gender":"Male"},
+{"eid":43,"ename":"Ardelle","gender":"Female"},
+{"eid":44,"ename":"Adrianna","gender":"Female"},
+{"eid":45,"ename":"Padriac","gender":"Male"},
+{"eid":46,"ename":"Aguste","gender":"Male"},
+{"eid":47,"ename":"Ernaline","gender":"Female"},
+{"eid":48,"ename":"Nataline","gender":"Female"},
+{"eid":49,"ename":"Bernadette","gender":"Female"},
+{"eid":50,"ename":"Bailey","gender":"Male"}]
+console.log(typeof(employees))
+console.log(employees.length)
+let i=0;
+let male_employees=0;
+while(i<=employees.length-1){
+    if(employees[i].gender=="Male"){
+        male_employees++;
+    }
+    i++;
+}
+console.log("No of Male employees are",male_employees)
