@@ -1,0 +1,106 @@
+Application Root Request
+-------------------------
+usage:Application Root Request 
+URL: http://127.0.0.1:8000/
+Method Type:GET
+Required Fields:None 
+Access Type:Public
+
+User Module API's
+-----------------------
+-----------------------
+Create User:
+------------ 
+Usage : Create new User 
+URL : http://127.0.0.1:8000/user/create 
+Method Type:POST 
+Required Fields: uname,email,gender,loc
+Access Type:Public
+
+Read Users:
+------------ 
+Usage : Fetch all users 
+URL : http://127.0.0.1:8000/user/ 
+Method Type:GET
+Required Fields: None 
+Access Type:Public
+
+Read User:
+------------ 
+Usage : Fetch user by Id
+URL : http://127.0.0.1:8000/user/101
+Method Type:GET
+Required Fields: None 
+Access Type:Public
+
+Update User:
+------------ 
+Usage : update user by Id
+URL : http://127.0.0.1:8000/user/update/101
+Method Type:PUT
+Required Fields: uname,email,gender,loc  
+Access Type:Public
+
+
+
+Delete User:
+------------ 
+Usage : update user by Id
+URL : http://127.0.0.1:8000/user/delete/101
+Method Type:DELETE
+Required Fields: uname,email,gender,loc  
+Access Type:Public
+
+
+
+Product Module API's
+-----------------------
+-----------------------
+Create product:
+------------ 
+Usage : Create new product 
+URL : http://127.0.0.1:8000/product/create 
+Method Type:POST 
+Required Fields: pname,price,qty,info
+Access Type:Public
+
+Read All Products:
+------------ 
+Usage : Fetch all products
+URL : http://127.0.0.1:8000/product/ 
+Method Type:GET
+Required Fields: None 
+Access Type:Public
+
+Read Product by Product Id :
+------------ 
+Usage : Fetch Product by Id
+URL : http://127.0.0.1:8000/product/101
+Method Type:GET
+Required Fields: None 
+Access Type:Public
+
+Update Product:
+------------ 
+Usage : update product by Id
+URL : http://127.0.0.1:8000/product/update/10
+Method Type:PUT
+Required Fields: pname,qty,price  
+Access Type:Public
+
+
+
+Delete product:
+------------ 
+Usage : Delete product by Id
+URL : http://127.0.0.1:8000/product/delete/101
+Method Type:DELETE
+Required Fields: None
+Access Type:Public
+
+
+
+
+
+
+to import user and product we are using router_include()
