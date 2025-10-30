@@ -14,12 +14,13 @@
     <div class="container">
       <div class="row" style="margin-top: 100px">
         <div class="col-4">
-          to
           <h4>onMouseOver:</h4>
-          <p>mouse over</p>
+          <p style="margin-top: -10px">
+            mouse over to change buttonbackgroundcolor
+          </p>
           <button
             id="first"
-            style="background-color: red"
+            style="background-color: red; margin-top: -10px"
             onmouseover="changeColor()"
           >
             Mouse Over
@@ -27,9 +28,12 @@
         </div>
         <div class="col-4">
           <h4>onMouseOut:</h4>
+          <p style="margin-top: -10px">
+            mouse over to change button background color
+          </p>
           <button
             id="second"
-            style="background-color: green"
+            style="background-color: green; margin-top: -10px"
             onmouseout="mouseOut()"
           >
             Mouse Out
@@ -37,21 +41,27 @@
         </div>
         <div class="col-4">
           <h4>onClick:</h4>
+          <p style="margin-top: -10px">
+            Click to change button background color
+          </p>
           <button
             id="three"
-            style="background-color: orange"
+            style="background-color: orange; margin-top: -10px"
             onclick="onClick()"
           >
             OnClick
           </button>
         </div>
       </div>
-      <div class="row" style="margin-top: 300px">
+      <div class="row" style="margin-top: 200px">
         <div class="col-4">
           <h4>ondblClick:</h4>
+          <p style="margin-top: -10px">
+            Double click to change the background color
+          </p>
           <button
             id="four"
-            style="background-color: red"
+            style="background-color: red; margin-top: -10px"
             ondblclick="ondblCLick()"
           >
             OndblClick
@@ -59,11 +69,27 @@
         </div>
         <div class="col-4">
           <h4>onFocus:</h4>
-          <input type="text" id="five" onfocus="onFocus()" />
+          <p style="margin-top: -10px">
+            Click to change input background color
+          </p>
+          <input
+            type="text"
+            id="five"
+            onfocus="onFocus()"
+            style="margin-top: -10px"
+          />
         </div>
         <div class="col-4">
           <h4>onBlur:</h4>
-          <input type="text" id="six" onblur="onBlur()" />
+          <p style="margin-top: -10px">
+            Change Lower case to upper case on blur events
+          </p>
+          <input
+            type="text"
+            id="six"
+            onblur="onBlur()"
+            style="margin-top: -10px"
+          />
         </div>
       </div>
     </div>

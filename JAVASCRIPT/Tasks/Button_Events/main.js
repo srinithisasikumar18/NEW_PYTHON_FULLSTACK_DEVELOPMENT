@@ -16,5 +16,6 @@ function onFocus(){
 function onBlur(){
     let input=document.getElementById('six');
     input.value=input.value.toUpperCase();
-    input.value=input.value.toLowerCase();
+    // input.value=input.value.toLowerCase();
+    
 }
