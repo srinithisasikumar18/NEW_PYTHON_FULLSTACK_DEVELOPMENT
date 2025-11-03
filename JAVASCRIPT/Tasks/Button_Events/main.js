@@ -2,13 +2,13 @@ function changeColor(){
     document.getElementById('first').style.backgroundColor="Yellow"
 }
 function mouseOut(){
-    document.getElementById('second').style.backgroundColor='Orange'
+    document.getElementsByTagName('button')[1].style.backgroundColor='Orange'
 }
 function onClick(){
-    document.getElementById('three').style.backgroundColor='Green'
+    document.querySelector('.btn1').style.backgroundColor='Green';
 }
 function ondblCLick(){
-    document.getElementById('four').style.backgroundColor='white'
+    document.getElementsByClassName('four')[0].style.backgroundColor='white'
 }
 function onFocus(){
     document.getElementById('five').style.backgroundColor='Pink'
