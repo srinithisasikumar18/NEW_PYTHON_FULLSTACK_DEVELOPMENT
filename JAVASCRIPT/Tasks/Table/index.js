@@ -1,8 +1,6 @@
-// Get reference to the table body
-let tbody = document.querySelector("#table1 tbody");
-
-// Sample data (you can later get this from user input, API, etc.)
-let employees = [{ "eid": 1, "name": "Eden", "email": "evamplew0@dmoz.org", "gender": "Female" },
+//we can use onload()
+//string literal===to read variable in the form of string
+let employee = [{ "eid": 1, "name": "Eden", "email": "evamplew0@dmoz.org", "gender": "Female" },
 { "eid": 2, "name": "Sammy", "email": "sgimeno1@ted.com", "gender": "Female" },
 { "eid": 3, "name": "Louise", "email": "lskryne2@issuu.com", "gender": "Female" },
 { "eid": 4, "name": "Novelia", "email": "narnet3@howstuffworks.com", "gender": "Female" },
@@ -102,28 +100,16 @@ let employees = [{ "eid": 1, "name": "Eden", "email": "evamplew0@dmoz.org", "gen
 { "eid": 98, "name": "Roth", "email": "rdimitru2p@earthlink.net", "gender": "Male" },
 { "eid": 99, "name": "Berry", "email": "bsilversmidt2q@washington.edu", "gender": "Female" },
 { "eid": 100, "name": "Kristine", "email": "kgoing2r@stumbleupon.com", "gender": "Female" }]
+function display_data() {
+    console.log("inside function")
+    let rows = "";
+    for (let emp of employee) {
+        // rows = rows + "GM"
+        // rows = rows + "<tr><td>emp.eid</td> <td>emp.ename</td><td>emp.esal</td></tr>"
 
-// Loop through array and add rows
-employees.forEach(emp => {
-    let row = document.createElement("tr");
+        rows = rows + `<tr><td>${emp.eid}</td> <td>${emp.ename}</td> <td>${emp.esal}</td> <td>${emp.gender}</td></tr>`
 
-    // Create and append table data cells
-    let cell1 = document.createElement("td");
-    cell1.textContent = emp.eid;
-    row.appendChild(cell1);
-
-    let cell2 = document.createElement("td");
-    cell2.textContent = emp.name;
-    row.appendChild(cell2);
-
-    let cell3 = document.createElement("td");
-    cell3.textContent = emp.email;
-    row.appendChild(cell3);
-
-    let cell4 = document.createElement("td");
-    cell4.textContent = emp.gender;
-    row.appendChild(cell4);
-
-    // Add the row to the tbody
-    tbody.appendChild(row);
-});
+    }
+    document.getElementById('one').innerHTML = rows
+    // document.getElementById('one').innerHTML = "GM"
+}
