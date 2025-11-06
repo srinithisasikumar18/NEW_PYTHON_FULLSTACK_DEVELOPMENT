@@ -126,7 +126,7 @@ function display_data() {
     for (let emp of users) {
         let rows = `<tr><td>${emp.eid}</td> <td>${emp.name}</td> <td>${emp.email}</td> <td>${emp.gender}</td></tr>`;
         if (emp.gender == "Female") {
-            female_emp += rows
+            female_emp = female_emp + rows
         }
         else if (emp.gender == "Male") {
             male_emp += rows

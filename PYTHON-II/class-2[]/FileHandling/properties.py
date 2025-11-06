@@ -1,0 +1,7 @@
+fp=open('wish.txt','w')
+print(fp.name)
+print(fp.writable())
+print(fp.readable())
+print(fp.closed)
+fp.close()
+print(fp.closed)

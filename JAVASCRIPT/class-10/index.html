@@ -1,50 +1,67 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <script src="./userData.js" type="text/javascript"></script>
-    </head>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="./userData.js" type="text/javascript"></script>
+  </head>
 
-   <body onload="display_data()" >
+  <body onload="display_data()">
     <nav class="nav navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">User Data</a>
+      <a href="#" class="navbar-brand">User Data</a>
     </nav>
-   <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <table border="1" >
-                    <thead class="bg-dark text-white" > 
-                        <th>Eid</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Gender</th>
-                    </thead>
-                    <tbody id="one">
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-4" >
-                <table border="1" >
-                    <thead class="bg-dark text-white">
-                        <th>Eid</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Gender</th>
-                    </thead>
-                    <tbody id="two"></tbody>
-                </table>
-            </div>
-            <div class="col-4" >
-                <table border="1" >
-                    <thead class="bg-dark text-white">
-                        <th>Eid</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Gender</th>
-                    </thead>
-                    <tbody id="three"></tbody>
-                </table>
-            </div>
+
+    <div class="container-m mt-4"  >
+      <div class="row">
+        <div class="col-4"> 
+          <h5 class="text-center text-primary">Female Employees</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="bg-dark text-white">
+                <tr>
+                  <th>Eid</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Gender</th>
+                </tr>
+              </thead>
+              <tbody id="one"></tbody>
+            </table>
+          </div>
         </div>
+
+        <div class="col-4">
+          <h5 class="text-center text-success">Male Employees</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="bg-dark text-white">
+                <tr>
+                  <th>Eid</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Gender</th>
+                </tr>
+              </thead>
+              <tbody id="two"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h5 class="text-center text-warning">Other Genders</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="bg-dark text-white">
+                <tr>
+                  <th>Eid</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Gender</th>
+                </tr>
+              </thead>
+              <tbody id="three"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-    </body>
+  </body>
 </html>
