@@ -1,0 +1,30 @@
+[
+    {
+        "eid": 101,
+        "ename": "rahul",
+        "gender": "Male",
+        "avail": false,
+        "grade": null
+    },
+    {
+        "eid": 102,
+        "ename": "sonia",
+        "gender": "Female",
+        "avail": true,
+        "grade": null
+    },
+    {
+        "eid": 103,
+        "ename": "gandhi",
+        "gender": "Male",
+        "avail": true,
+        "grade": null
+    },
+    {
+        "eid": 104,
+        "ename": "modi",
+        "gender": "Male",
+        "avail": true,
+        "grade": null
+    }
+]
