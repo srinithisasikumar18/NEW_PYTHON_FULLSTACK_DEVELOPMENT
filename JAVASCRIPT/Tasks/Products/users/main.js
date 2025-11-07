@@ -13,3 +13,7 @@ function display_users(users) {
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((json) => display_users(json));
+
+
+
+// let users = fetch("https://jsonplaceholder.typicode.com/users")
