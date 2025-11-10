@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Grade Calculator</title>
+    <script>
+        function calculateGrade() {
+            let name = document.getElementById("name").value;
+            let sub1 = Number(document.getElementById("sub1").value);
+            let sub2 = Number(document.getElementById("sub2").value);
+            let sub3 = Number(document.getElementById("sub3").value);
+
+            let avg = (sub1 + sub2 + sub3) / 3;
+            let grade;
+            let resultButton = document.getElementById("result");
+
+            if (avg >= 90) {
+                grade = "A";
+                resultButton.style.backgroundColor = "green";
+            } else if (avg >= 75) {
+                grade = "B";
+                resultButton.style.backgroundColor = "orange";
+            } else {
+                grade = "Fail";
+                resultButton.style.backgroundColor = "red";
+            }
+
+            resultButton.innerHTML =
+                `${name} - Average: ${avg.toFixed(2)} - Grade: ${grade}`;
+        }
+    </script>
+</head>
+<body>
+    <form id="form_element">
+        <h3>🎓 Grade Calculator</h3>
+
+        <b><label>Enter Name:</label></b>
+        <input type="text" id="name"> <br><br>
+
+        <b><label>Enter Marks of Sub1:</label></b>
+        <input type="text" id="sub1"> <br><br>
+
+        <b><label>Enter Marks of Sub2:</label></b>
+        <input type="text" id="sub2"> <br><br>
+
+        <b><label>Enter Marks of Sub3:</label></b>
+        <input type="text" id="sub3"> <br><br>
+
+        <button type="button" onclick="calculateGrade()">Calculate Grade</button> <br><br>
+
+        <button type="button" id="result">The result will be displayed here</button>
+    </form>
+</body>
+</html>

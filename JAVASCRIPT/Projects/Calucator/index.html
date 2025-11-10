@@ -1,10 +1,10 @@
-Project Description
+<!-- Project Description
 
 Create a small web page where the user can:
 
 Enter their name and marks for 3 subjects.
 
-Click a button to calculate the average and display the grade (A/B/C/Fail).
+Click a button to calculate the average and display the grade (A/B/C/Fail). -->
 
 
 <html>
@@ -13,6 +13,23 @@ Click a button to calculate the average and display the grade (A/B/C/Fail).
         <script src="./main.js" type="text/javascript"></script>
     </head>
     <body>
+        <form >
+            <h3>Grade Calucator</h3>
+            <b><label>Enter the name</label></b>
+            <input type="text" id="name"> <br><br>
+
+            <b><label>Enter the Marks of sub1:</label></b>
+            <input type="text" id="sub1"> <br><br>
+
+            <b><label>Enter the Marks of sub2:</label></b>
+            <input type="text" id="sub2"> <br><br>
+
+            <b><label>Enter the Marks of sub3:</label></b>
+            <input type="text" id="sub3"> <br><br>
+
+            <button onclick="calculateGrade()" type="button">Calculate Grade</button> <br><br>
+        </form>
+        <p id="result"></p>
         
     </body>
 </html>
