@@ -1,0 +1,61 @@
+import pymongo
+from pymongo import MongoClient
+client=None
+try:
+    client=MongoClient('mongodb://localhost:27017/')
+    db=client['database2']
+    user_cols=db['employees']
+    employees=[{"id":1,"name":"Aurilia","gender":"Female"},
+    {"id":2,"name":"Carmela","gender":"Female"},
+    {"id":3,"name":"Manuel","gender":"Polygender"},
+    {"id":4,"name":"Hammad","gender":"Male"},
+    {"id":5,"name":"Tabby","gender":"Female"},
+    {"id":6,"name":"Jephthah","gender":"Male"},
+    {"id":7,"name":"Vicki","gender":"Female"},
+    {"id":8,"name":"Cleavland","gender":"Male"},
+    {"id":9,"name":"Wolfy","gender":"Male"},
+    {"id":10,"name":"Micheal","gender":"Male"},
+    {"id":11,"name":"Karin","gender":"Female"},
+    {"id":12,"name":"Jorry","gender":"Female"},
+    {"id":13,"name":"Gaspar","gender":"Male"},
+    {"id":14,"name":"Penni","gender":"Female"},
+    {"id":15,"name":"Ashil","gender":"Female"},
+    {"id":16,"name":"Luella","gender":"Female"},
+    {"id":17,"name":"Howey","gender":"Male"},
+    {"id":18,"name":"Newton","gender":"Polygender"},
+    {"id":19,"name":"Haleigh","gender":"Agender"},
+    {"id":20,"name":"Janenna","gender":"Female"},
+    {"id":21,"name":"Brendon","gender":"Male"},
+    {"id":22,"name":"Barbey","gender":"Female"},
+    {"id":23,"name":"Melli","gender":"Genderfluid"},
+    {"id":24,"name":"Thom","gender":"Male"},
+    {"id":25,"name":"Hobey","gender":"Male"},
+    {"id":26,"name":"Kristy","gender":"Female"},
+    {"id":27,"name":"Paolo","gender":"Male"},
+    {"id":28,"name":"George","gender":"Male"},
+    {"id":29,"name":"Eli","gender":"Male"},
+    {"id":30,"name":"Bonny","gender":"Female"},
+    {"id":31,"name":"Sapphire","gender":"Female"},
+    {"id":32,"name":"Marleen","gender":"Female"},
+    {"id":33,"name":"Dodi","gender":"Female"},
+    {"id":34,"name":"Guillermo","gender":"Male"},
+    {"id":35,"name":"Padgett","gender":"Male"},
+    {"id":36,"name":"Penny","gender":"Male"},
+    {"id":37,"name":"Angus","gender":"Male"},
+    {"id":38,"name":"Bette","gender":"Female"},
+    {"id":39,"name":"Fabien","gender":"Male"},
+    {"id":40,"name":"Cullie","gender":"Male"},
+    {"id":41,"name":"Nealson","gender":"Male"},
+    {"id":42,"name":"Isidora","gender":"Female"},
+    {"id":43,"name":"Nananne","gender":"Female"},
+    {"id":44,"name":"Brenden","gender":"Male"},
+    {"id":45,"name":"Marsha","gender":"Female"},
+    {"id":46,"name":"Garland","gender":"Female"},
+    {"id":47,"name":"Barclay","gender":"Male"},
+    {"id":48,"name":"Lin","gender":"Female"},
+    {"id":49,"name":"Anissa","gender":"Female"},
+    {"id":50,"name":"Dacie","gender":"Polygender"}]
+    user_cols.insert_many(employees)
+    print("employees has benn inserted")
+except:
+    pass
