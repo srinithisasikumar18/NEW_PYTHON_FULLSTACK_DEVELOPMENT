@@ -5,6 +5,9 @@ let new_emp = enames.filter((names) => {
 })
 console.log(new_emp)
 
+let names = enames.filter(nam => nam.length >= 5)
+console.log(names)
+
 
 let number = [11, 7, 8, 232, 1055, 41, 8, 12]
 // let even_num = []
