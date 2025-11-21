@@ -1,0 +1,8 @@
+class User(Base Model)
+user--child class
+Base Model-- parent class
+    "validate the keys"
+    ex:::
+    uid:int
+
+def create_user(user:User)

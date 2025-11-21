@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="p-6">
+    <div class="text-red-600 space-y-2" id="msg"></div>
+    <div>
+        <form >
+            <div id="one">
+            <input type="text" placeholder="Enter Message..." >
+            <button id="user" >Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+        <!-- <form onsubmit="sub(event)" >
+            <div id="two">
+            <input type="text" placeholder="Enter Message..." class="border p-2 rounded" id="user">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </div>
+        </form> -->
+    
+</body>
+
+<script>
+    const lists = [
+        { role: "user", content: "hi yagnesh reddy somavarapu" },
+        { role: "agent", content: "hi" }
+    ];
+
+    function data() {
+        const li = lists.map(item => `
+            <div class="p-3 border rounded 
+                ${item.role === "user"
+                ? "bg-gray-100 text-red-600"
+                : "bg-gray-200 text-blue-600"}">
+                <h1>${item.content}</h1>
+            </div>
+        `).join("");
+
+        document.getElementById("msg").innerHTML = li;
+    }
+    data();
+
+    async function sub(event) {
+        event.preventDefault();
+
+        const msg = document.getElementById("user").value;
+        if (!msg.trim()) return;
+
+        lists.push({ role: "user", content: msg });
+        data();
+        document.getElementById("user").value = "";
+
+        try {
+            const response = await fetch("http://localhost:8000/Agent/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ user_respones: msg })
+            });
+
+            const result = await response.json();
+
+            lists.push({ role: "agent", content: result.response });
+            data();
+
+        } catch (err) {
+            console.log("Error:", err);
+        }
+    }
+</script>
+
+</html>

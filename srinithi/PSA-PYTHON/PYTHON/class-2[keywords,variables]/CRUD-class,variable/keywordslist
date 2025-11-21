@@ -1,0 +1,16 @@
+KEYWORDS IN PYTHON:
+DATATYPE KW:'False', 'None', 'True'
+
+OPERATIONAL KW: 'and', 'or', 'not','in','is'
+
+CONTROLFLOW KW: 'if', 'elif', 'else', 'while','for','break','continue'
+
+FUNCTIONAL KW: 'def', 'return','pass','lambda','global', 'nonlocal', 'yield'
+
+OOP KW: 'class','from', 'import','as'
+
+EH: 'try', 'except', 'finally', 'raise'
+
+miscellaneous:'assert', 'async','await', 'del','with'
+
+

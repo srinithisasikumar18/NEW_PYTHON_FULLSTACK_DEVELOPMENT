@@ -1,0 +1,14 @@
+fetch():-
+in built function
+to invoke restapi
+return promise
+
+
+fetch()
+.then()
+.catch()
+
+
+fetch()
+async 
+await
