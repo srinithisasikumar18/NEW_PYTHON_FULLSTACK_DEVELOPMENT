@@ -1,0 +1,35 @@
+div {
+    /* height: 200px;
+    margin-top: 180px;
+    margin-left: 420px; */
+    border: 2px solid black;
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+#container {
+    margin-top: 200px;
+    margin-left: 400px;
+    height: 155px;
+    width: 220px;
+}
+
+button {
+    position: relative;
+    left: 152px;
+}
+
+form {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#name {
+    width: 170px;
+    /* margin-left: 22px; */
+}
+
+#password {
+    width: 170px;
+}

@@ -1,0 +1,38 @@
+26/11/2025
+=========================
+React: popular on 2016. it is a library(gropu of files) for building user interfaces.
+it is a component driven architecture (it automatically create its own object automatically).
+for developing single page application.
+why u need single page aplication:
+without reloading i want  to refresh my page.
+giving json response would not refresh the page.
+----install react with using:
+1)npm
+npx 
+>npx create-react-app react-31
+>cd react-31
+>npm start
+we can't render multiple tags.
+component=a picece of UI logic.
+ 
+REACT INTRO, Installation
+react application flow 
+react component  deep drive react 16.8> functional and class componenets
+react styling/[B]
+react props,
+react static
+
+
+
+
+1.what is react?
+2.what is multi page?
+*react: it is mainly used for single page development,react is a library(collection of files),for component driven architecture
+ how to install: 1)npm    							 2)vite
+               >npx create-react-app react31
+			   >cd react31
+			   >npm start
+*what is component: apiece of code reusable 
+ 
+*angular:it is a frame work(it has http requests)
+*what is single page: we want without reload and refresh the page
