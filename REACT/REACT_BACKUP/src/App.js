@@ -4,7 +4,6 @@
 // export default App;
 
 
-//----------------------------------------------------------------------------------------------------------------------------------
 
 // class-2
 // import ReactDom from 'react-dom/client'
@@ -22,7 +21,6 @@
 // export default App;
 
 
-//----------------------------------------------------------------------------------------------------------------------------------
 
 
 // class - 3
@@ -79,51 +77,11 @@
 
 
 // componentA and componentB
-// import React, { Fragment } from "react";
-// import ComponentA from "./class-4/ComponentA";
-// let App = () => {
-//     return <Fragment>
-//         <ComponentA />
-//     </Fragment>
-// }
-// export default App;
-
-
-// Props DRilling
-// import React, {Fragment} from "react";
-// import CompA from './CompA'
-// import CA from "./PD/CA";
-// let App=()=>{
-
-//     return <Fragment>
-//                 <h3>App Component</h3>
-//                 <hr/>            
-//             <CA/>
-//             </Fragment>
-// }
-// export default App;
-
-//----------------------------------------------------------------------------------------------------------------------------------
-
-// class-5[STATE]
-// import React from "react"
-// import Message from "./class-5[state]/Message"
-// let App = () => {
-//     return <div>
-//         <h2>State</h2>
-//         <Message />
-
-//     </div>
-// }
-// export default App;
-
-import React from "react"
-import Counter from "./class-5[state]/Counter";
+import React, { Fragment } from "react";
+import ComponentA from "./class-4/ComponentA";
 let App = () => {
-    return <div>
-        <h2>State</h2>
-        <Counter />
-
-    </div>
+    return <Fragment>
+        <ComponentA />
+    </Fragment>
 }
 export default App;
