@@ -1,0 +1,28 @@
+.box {
+    color: green;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    justify-content: start;
+    width: 77%;
+    color: black;
+
+}
