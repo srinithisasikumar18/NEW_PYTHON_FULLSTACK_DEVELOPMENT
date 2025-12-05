@@ -192,7 +192,7 @@
 // }
 // export default App;
 
-import UsersA from "./class-8[axios]/UsersA";
+import UsersA from "./class-8[axios1]/UsersA";
 let App = () => {
     return <div>
         <h3>Axios</h3>
